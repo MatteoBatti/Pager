@@ -21,14 +21,14 @@ public struct PagerAppearance {
     var selected: Int?
     let height: CGFloat
     var color: UIColor?
-    var titleColors: [(UIColor, UIControlState)]?
+    var titleColors: [(UIColor, UIControl.State)]?
     var font: UIFont?
     
     public init(type: PagerType,
                 selected: Int = 0,
                 height: CGFloat = 50.0,
                 color: UIColor? = .clear,
-                titleColors: [(UIColor, UIControlState)]? = [(.black, .normal)],
+                titleColors: [(UIColor, UIControl.State)]? = [(.black, .normal)],
                 font: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize) ) {
         self.type = type
         self.selected = selected

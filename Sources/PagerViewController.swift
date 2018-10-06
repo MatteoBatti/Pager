@@ -18,9 +18,9 @@ class PagerViewController: UIPageViewController {
         }
     }
     
-    init(pages: [UIViewController], transitionStyle style: UIPageViewControllerTransitionStyle, navigationOrientation: UIPageViewControllerNavigationOrientation, options: [String : Any]? = nil) {
+    init(pages: [UIViewController], transitionStyle style: UIPageViewController.TransitionStyle, navigationOrientation: UIPageViewController.NavigationOrientation, options: [String : Any]? = nil) {
         self.pages = pages
-        super.init(transitionStyle: style, navigationOrientation: navigationOrientation, options: options)
+        super.init(transitionStyle: style, navigationOrientation: navigationOrientation, options: convertToOptionalUIPageViewControllerOptionsKeyDictionary(options))
         self.delegate = self
         self.dataSource = self
     }
@@ -39,7 +39,7 @@ class PagerViewController: UIPageViewController {
     internal func show(index: Int) {
         guard index < self.pages.count else { return }
         let vc = self.pages[index]
-        let direction: UIPageViewControllerNavigationDirection = (index > currentIndex.value) ? .forward : .reverse
+        let direction: UIPageViewController.NavigationDirection = (index > currentIndex.value) ? .forward : .reverse
         currentIndex.value = index
         setViewControllers([vc], direction: direction , animated: true, completion: nil)
     }
@@ -82,4 +82,10 @@ extension PagerViewController: UIPageViewControllerDataSource {
         return pages[nextIndex]
     }
     
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalUIPageViewControllerOptionsKeyDictionary(_ input: [String: Any]?) -> [UIPageViewController.OptionsKey: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIPageViewController.OptionsKey(rawValue: key), value)})
 }

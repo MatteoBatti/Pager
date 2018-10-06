@@ -18,9 +18,9 @@ public class Pager: UIViewController  {
     private lazy var stackView: UIStackView =  {
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis  = UILayoutConstraintAxis.horizontal
-        stackView.distribution  = UIStackViewDistribution.equalSpacing
-        stackView.alignment = UIStackViewAlignment.center
+        stackView.axis  = NSLayoutConstraint.Axis.horizontal
+        stackView.distribution  = UIStackView.Distribution.equalSpacing
+        stackView.alignment = UIStackView.Alignment.center
         stackView.spacing   = 0.0
         stackView.backgroundColor = UIColor.red
         return stackView
@@ -60,8 +60,8 @@ public class Pager: UIViewController  {
         self.appearence = appearence
         let pages = self.viewControllers?.map({ $0.0 })
         self.pagerVC = PagerViewController(pages: pages ?? [],
-                                           transitionStyle: UIPageViewControllerTransitionStyle.scroll,
-                                           navigationOrientation: UIPageViewControllerNavigationOrientation.horizontal,
+                                           transitionStyle: UIPageViewController.TransitionStyle.scroll,
+                                           navigationOrientation: UIPageViewController.NavigationOrientation.horizontal,
                                            options: nil)
         super.init(nibName: nil, bundle: nil)
     }
@@ -160,13 +160,13 @@ public class Pager: UIViewController  {
         let button = UIButton()
         button.tag = tag ?? 0
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle(title, for: UIControlState.normal)
+        button.setTitle(title, for: UIControl.State.normal)
         button.backgroundColor = self.appearence?.color
         self.appearence?.titleColors?.forEach({ (color, state) in
             button.setTitleColor(color, for: state)
         })
         button.titleLabel?.font = self.appearence?.font
-        button.addTarget(self, action: #selector(Pager.selectorTapped(_:)), for: UIControlEvents.touchUpInside)
+        button.addTarget(self, action: #selector(Pager.selectorTapped(_:)), for: UIControl.Event.touchUpInside)
         return button
     }
     

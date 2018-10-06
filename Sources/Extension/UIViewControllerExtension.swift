@@ -17,12 +17,12 @@ extension UIViewController {
      */
     public func add(childController: UIViewController?, toView view: UIView?) {
         guard let childController = childController, let view = view else { return }
-        self.addChildViewController(childController)
+        self.addChild(childController)
         childController.beginAppearanceTransition(true, animated: true)
-        childController.willMove(toParentViewController: self)
+        childController.willMove(toParent: self)
         view.addSubview(childController.view)
         childController.endAppearanceTransition()
-        childController.didMove(toParentViewController: self)
+        childController.didMove(toParent: self)
         childController.view.match(view)
     }
     
@@ -33,11 +33,11 @@ extension UIViewController {
      */
     public func remove(childController: UIViewController?) {
         guard let childController = childController else { return }
-        childController.willMove(toParentViewController: nil)
+        childController.willMove(toParent: nil)
         childController.beginAppearanceTransition(false, animated: true)
         childController.view.removeFromSuperview()
         childController.endAppearanceTransition()
-        childController.removeFromParentViewController()
+        childController.removeFromParent()
     }
     
 }
