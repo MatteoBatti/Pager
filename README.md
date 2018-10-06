@@ -18,7 +18,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'YourTarget' do
-    pod "Pager", :git => "https://bitbucket.org/funamboleng/ios-pager"
+    pod "Pager"
 end
 
 ```
