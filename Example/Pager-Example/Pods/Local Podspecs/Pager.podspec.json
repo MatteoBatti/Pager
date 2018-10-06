@@ -1,0 +1,27 @@
+{
+  "name": "Pager",
+  "version": "0.1",
+  "summary": "Funambol Pager View Utility",
+  "description": "Your description here.",
+  "homepage": "todo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Matteo Battistini": "matteo.battistini@funambol.com"
+  },
+  "social_media_url": "",
+  "platforms": {
+    "ios": "9.0",
+    "osx": "10.9",
+    "watchos": "2.0",
+    "tvos": "9.0"
+  },
+  "source": {
+    "git": ".git",
+    "tag": "0.1"
+  },
+  "source_files": "Sources/**/*",
+  "frameworks": "Foundation"
+}
