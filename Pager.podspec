@@ -1,19 +1,15 @@
 Pod::Spec.new do |s|
   s.name         = "Pager"
   s.version      = "0.1"
-  s.summary      = "Pager view"
-  s.description  = <<-DESC
-    Your description here.
-  DESC
-  s.homepage     = "todo"
-  s.license      = { :type => "MIT", :file => "LICENSE" }
+
+  s.summary      = "Elegant Pager View in Swift"
+  s.license      = "MIT"
+  s.homepage 	 = 'https://github.com/MatteoBatti/Pager'
   s.author             = { "Matteo Battistini" => "batti0011@gmail.bom" }
-  s.social_media_url   = ""
+  s.source       = { :git => "https://github.com/MatteoBatti/Pager.git", :tag => s.version.to_s }
+  s.swift_version = "4.2"
+
   s.ios.deployment_target = "9.0"
-  s.osx.deployment_target = "10.9"
-  s.watchos.deployment_target = "2.0"
-  s.tvos.deployment_target = "9.0"
-  s.source       = { :git => ".git", :tag => s.version.to_s }
+
   s.source_files  = "Sources/**/*"
-  s.frameworks  = "Foundation"
 end
