@@ -1,14 +1,11 @@
 //
 //  PagerTests.swift
-//  Funambol
 //
 //  Created by Matteo Battistini on 14/02/2018.
-//  Copyright © 2018 Funambol. All rights reserved.
 //
 
 import Foundation
 import XCTest
-import Pager
 
 class PagerTests: XCTestCase {
     func testExample() {
