@@ -3,174 +3,167 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FD451F22E3BBCB34F34136DF3D2E2D3 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2F71DC573A1352E3C662519CECBA0D /* DoubleExtension.swift */; };
-		0FD7DFEF1875BA1891C2BF2AD54A2B72 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C57528DD0BF855FB672F3BB05A9D1 /* UIViewExtension.swift */; };
-		2C608D2D8E500D6BF1432B31BF851A4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		3D0ADACACF7E5E63C81FED5B39C53FD6 /* Pager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D1C801D616619C15B74D98BEBDECB9 /* Pager-dummy.m */; };
-		485D5CF309B5EAC341B61BFE7CB04A65 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308BFFD08D80E958EDB4487F46DEB480 /* Event.swift */; };
-		4B9CA138227413F431E7E88A2B81111B /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E88DAECC5099EB87DCD23A7AB0F104 /* IntExtension.swift */; };
-		4D100DE70966BAFCC926F9CB6B12337E /* PagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E513A42E8C5BEE12178DD9D507B34A52 /* PagerViewController.swift */; };
-		4F84FF1C8D216B0C74C9D305A0C785D8 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A56A5796B24C4627A8CF80CC8D95F /* ArrayExtension.swift */; };
-		589EB5D1B956D0F56392C1EE45565AAC /* Pods-Pager-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8505609327C071F83A0BEE5D0351E3 /* Pods-Pager-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66B47EE4F3FE4C965A672F7D29831198 /* PagerAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17814339AF8CABD025DB8B67D0FDC6A6 /* PagerAppearance.swift */; };
-		76A3FCB2ABF006942157B4DAB729CA79 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD60A13C116E25021809D78861F8A7 /* UIViewControllerExtension.swift */; };
-		7B04CA74FE4398961FFADBBF5570B08B /* Pods-Pager-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C077AD8CADBAE4D0ACE46BC33BCF28BF /* Pods-Pager-Example-dummy.m */; };
-		8337158FB91AD29DF6F57703743A13E7 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B97DAEA3FAB886EA40F07E1B6FDBBC /* CGFloatExtension.swift */; };
-		95181E86207F41580097B05F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95181E85207F41580097B05F /* Log.swift */; };
-		A7DF8D87D31294D4D78E5967C636DADC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		ADBEE9929BAB5F151EF89FCFE259A56F /* Pager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4ABA239B0DF918C38BF9FD96BEB8C /* Pager.swift */; };
-		C8F4067B2AE5D0105244FA152B7E8873 /* WeakRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE02E883C5F3D42A03E2911FF576755F /* WeakRef.swift */; };
-		D4A1C0372F71706F464B8EBE30E2A0D6 /* Pager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9341E53148A94FDED8927C7E930B7991 /* Pager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C53489FEE9EFDD97381242689482F4A /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198EAFD918DE8B407CD5B3718234A107 /* UIViewControllerExtension.swift */; };
+		2B24344409B1185FA7970D8F9F3AE55A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C244D384BC58E22AD3D973F4C2CB1895 /* Event.swift */; };
+		3B390C795856E8F663D8CCABB04E325D /* PagerTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A791E87B0B14F8D4CD123E3309CDDC /* PagerTab.swift */; };
+		3D6A06FDCE7463979FEC604D03271AE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		48DEB61D50EDA81F2466EA50576BA68A /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6308680A7E14FCAF3EE5531ADE71307F /* DoubleExtension.swift */; };
+		5AB62A657A5362D6AC0135646BA2B60B /* Pods-Pager-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C077AD8CADBAE4D0ACE46BC33BCF28BF /* Pods-Pager-Example-dummy.m */; };
+		614A2B25491EA39CD170AC418FF09670 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACB3FDC74015DB493E6B79AB3787D6B /* CGFloatExtension.swift */; };
+		759BCF4CB606A21E87F31BDDFBF386B8 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC627730E5BC22EA503E53A64B7B1F8 /* UIViewExtension.swift */; };
+		9C465B02174B47F5217324646B6AB40C /* PagerTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92063F6CB35B5A232C32EA310F4BD17B /* PagerTabViewController.swift */; };
+		C01FB0B9234709CC1065EBFB6E5FA2C6 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0982A8C492BF8048BC44F145F06EB63 /* IntExtension.swift */; };
+		C0BDAE458679ABC8034761AFFAE18612 /* Pods-Pager-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8505609327C071F83A0BEE5D0351E3 /* Pods-Pager-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D870508D08377BF0F3CE319D1B9AB5BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		E0E8427061C530BE492EE975DB3B3AE4 /* PagerTabAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C685FD2F8A5EFDFE88443E45146BB193 /* PagerTabAppearance.swift */; };
+		F677766BCAF123122DBD088952786359 /* PagerTab-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5523631E311148B28608EBB287CF04FA /* PagerTab-dummy.m */; };
+		FE83DEA0EB7C558AD0BB3180F8859EEA /* WeakRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04330EEA4761C0527ABF384C3C25FB11 /* WeakRef.swift */; };
+		FFA3E60E07EE1CB87E9CB560CFB43510 /* PagerTab-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90BFC9CF41EA4E449C382CB78B1BE8DE /* PagerTab-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8BB8B24E978F3E05F8E95BC09ACCA15E /* PBXContainerItemProxy */ = {
+		8846635B8F25B9B79BC54952E3D9E5FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7ADCC17EE0E28C1E574020DABD00ABCB;
-			remoteInfo = Pager;
+			remoteGlobalIDString = 439A3645FBE8F6F9CD3DA3C5BF4E0A46;
+			remoteInfo = PagerTab;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01F4ABA239B0DF918C38BF9FD96BEB8C /* Pager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pager.swift; path = Sources/Pager.swift; sourceTree = "<group>"; };
+		04330EEA4761C0527ABF384C3C25FB11 /* WeakRef.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeakRef.swift; sourceTree = "<group>"; };
+		0712215B1A96CA97CE721F9A8C69AA7D /* PagerTab.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = PagerTab.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		10D70DE8AD7EAA86D2974BDCC1B6C0AA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		14CB927F1A87B87ADF5EA02213E81926 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		15D4A9ECB880390C2D96C296B047ABBC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17814339AF8CABD025DB8B67D0FDC6A6 /* PagerAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerAppearance.swift; path = Sources/PagerAppearance.swift; sourceTree = "<group>"; };
+		198EAFD918DE8B407CD5B3718234A107 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		1ACB3FDC74015DB493E6B79AB3787D6B /* CGFloatExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
 		1FE659140D9F98AAB6902F440B7824BA /* Pods-Pager-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pager-Example-resources.sh"; sourceTree = "<group>"; };
 		2338DDB808629BF5E9A25571EE823BD2 /* Pods-Pager-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pager-Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		2A7C43367E632CE4DC99925279E734A7 /* Pager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pager.xcconfig; sourceTree = "<group>"; };
-		308BFFD08D80E958EDB4487F46DEB480 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		2CF7395C6B8689086B28CBC0C413D8BE /* PagerTab.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PagerTab.modulemap; sourceTree = "<group>"; };
+		2DD833864A1F855695CA52D3F1E9FFEA /* PagerTab-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagerTab-prefix.pch"; sourceTree = "<group>"; };
 		36BFDBB1B1DFD70938FE890A652768C8 /* Pods-Pager-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pager-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4F9A56A5796B24C4627A8CF80CC8D95F /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
-		53E88DAECC5099EB87DCD23A7AB0F104 /* IntExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		5523631E311148B28608EBB287CF04FA /* PagerTab-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PagerTab-dummy.m"; sourceTree = "<group>"; };
 		59548E6588A91028AB3BB10989406738 /* Pods-Pager-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pager-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5EF59590DE80851764E4DE504198FDB0 /* Pager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pager-prefix.pch"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A3E0F33C1E88760377CFF6394AB6001 /* Pods_Pager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pager_Example.framework; path = "Pods-Pager-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6308680A7E14FCAF3EE5531ADE71307F /* DoubleExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		77F1083967AD3BC1290BEAFF9F5C163B /* PagerTab.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagerTab.xcconfig; sourceTree = "<group>"; };
+		7EC627730E5BC22EA503E53A64B7B1F8 /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		90BFC9CF41EA4E449C382CB78B1BE8DE /* PagerTab-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagerTab-umbrella.h"; sourceTree = "<group>"; };
 		9109362AE482915BF71250D2AA2A3FE4 /* Pods-Pager-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pager-Example-frameworks.sh"; sourceTree = "<group>"; };
-		9341E53148A94FDED8927C7E930B7991 /* Pager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pager-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95181E85207F41580097B05F /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
-		9B2F71DC573A1352E3C662519CECBA0D /* DoubleExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
-		9F2392BA01A0E1C4AF44846EAD7CFB0C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		A29269A92D505C135F8B5B2B1F36DFC3 /* Pager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC1C57528DD0BF855FB672F3BB05A9D1 /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		92063F6CB35B5A232C32EA310F4BD17B /* PagerTabViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabViewController.swift; path = Sources/PagerTabViewController.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B0982A8C492BF8048BC44F145F06EB63 /* IntExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		BA2179DE2D2A8BBAEE3D6C4095FBED7E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C077AD8CADBAE4D0ACE46BC33BCF28BF /* Pods-Pager-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pager-Example-dummy.m"; sourceTree = "<group>"; };
-		CBCCFF4FAABE522D69FCFF9833B79FC0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C244D384BC58E22AD3D973F4C2CB1895 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		C685FD2F8A5EFDFE88443E45146BB193 /* PagerTabAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabAppearance.swift; path = Sources/PagerTabAppearance.swift; sourceTree = "<group>"; };
 		D2093193F5C7103BD2FD8F648D2CE03C /* Pods-Pager-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pager-Example.modulemap"; sourceTree = "<group>"; };
+		D2A791E87B0B14F8D4CD123E3309CDDC /* PagerTab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTab.swift; path = Sources/PagerTab.swift; sourceTree = "<group>"; };
+		D65E8F65DF82F8DAC4D25C51EFF6A4A9 /* PagerTab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PagerTab.framework; path = PagerTab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA3C05E4DC618F819F20923973B179A /* Pods-Pager-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pager-Example.release.xcconfig"; sourceTree = "<group>"; };
 		DE8505609327C071F83A0BEE5D0351E3 /* Pods-Pager-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pager-Example-umbrella.h"; sourceTree = "<group>"; };
-		E513A42E8C5BEE12178DD9D507B34A52 /* PagerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerViewController.swift; path = Sources/PagerViewController.swift; sourceTree = "<group>"; };
-		E6716AC91CEE888F098C445911C99BBB /* Pods_Pager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6D1C801D616619C15B74D98BEBDECB9 /* Pager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pager-dummy.m"; sourceTree = "<group>"; };
-		EDCB6580095B3E4B6A7288846F425705 /* Pager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pager.modulemap; sourceTree = "<group>"; };
-		EE02E883C5F3D42A03E2911FF576755F /* WeakRef.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeakRef.swift; sourceTree = "<group>"; };
-		F2FD60A13C116E25021809D78861F8A7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
-		F4B97DAEA3FAB886EA40F07E1B6FDBBC /* CGFloatExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
-		F8C02039DFF6F372145F62CDC28EC48F /* Pager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Pager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		FF8241E05900D61696B2ABB0A9B7B6D3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AB11EDB3A737E1C55E4BD09ECB2D7E14 /* Frameworks */ = {
+		A210B57DD4F777F4107FDF2972CEC0AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7DF8D87D31294D4D78E5967C636DADC /* Foundation.framework in Frameworks */,
+				3D6A06FDCE7463979FEC604D03271AE8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC6EB10389D19E4433E12FC0AD60678F /* Frameworks */ = {
+		ED4AC60140F5A2FE00C8529B3C8944D2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C608D2D8E500D6BF1432B31BF851A4E /* Foundation.framework in Frameworks */,
+				D870508D08377BF0F3CE319D1B9AB5BF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0FE5FCC8CCFF22607F52D9E376631CFF /* Development Pods */ = {
+		45D034428250619F981B081F091A0AF0 /* utility */ = {
 			isa = PBXGroup;
 			children = (
-				3799401F88F12C8D07F1ABEE5F3C7B9E /* Pager */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		1BD6D1CA67D76A1DE278ED200D0A619E /* utility */ = {
-			isa = PBXGroup;
-			children = (
-				308BFFD08D80E958EDB4487F46DEB480 /* Event.swift */,
-				EE02E883C5F3D42A03E2911FF576755F /* WeakRef.swift */,
-				95181E85207F41580097B05F /* Log.swift */,
+				C244D384BC58E22AD3D973F4C2CB1895 /* Event.swift */,
+				04330EEA4761C0527ABF384C3C25FB11 /* WeakRef.swift */,
 			);
 			name = utility;
 			path = Sources/utility;
 			sourceTree = "<group>";
 		};
-		3799401F88F12C8D07F1ABEE5F3C7B9E /* Pager */ = {
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				01F4ABA239B0DF918C38BF9FD96BEB8C /* Pager.swift */,
-				17814339AF8CABD025DB8B67D0FDC6A6 /* PagerAppearance.swift */,
-				E513A42E8C5BEE12178DD9D507B34A52 /* PagerViewController.swift */,
-				EA000D44B026319D381509D7FC187525 /* Extension */,
-				77FA3F1B6E6F30BBB3D331B26A0BDA2D /* Pod */,
-				959D3F6AA1B9E1C7321F098A72E7E984 /* Support Files */,
-				1BD6D1CA67D76A1DE278ED200D0A619E /* utility */,
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
 			);
-			name = Pager;
-			path = ../../..;
-			sourceTree = "<group>";
-		};
-		77FA3F1B6E6F30BBB3D331B26A0BDA2D /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				9F2392BA01A0E1C4AF44846EAD7CFB0C /* LICENSE */,
-				F8C02039DFF6F372145F62CDC28EC48F /* Pager.podspec */,
-				FF8241E05900D61696B2ABB0A9B7B6D3 /* README.md */,
-			);
-			name = Pod;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				0FE5FCC8CCFF22607F52D9E376631CFF /* Development Pods */,
+				7EB5CD518EB069AEA941FC990A796401 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				AAC29C4FBD5923F7C4A7B97947FDFAE9 /* Products */,
+				A26FB97A9CFE68A5E7E65A9A295A8173 /* Products */,
 				D55B0581040EE7148E63FE72DA3DEDD6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		959D3F6AA1B9E1C7321F098A72E7E984 /* Support Files */ = {
+		7EB5CD518EB069AEA941FC990A796401 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CBCCFF4FAABE522D69FCFF9833B79FC0 /* Info.plist */,
-				EDCB6580095B3E4B6A7288846F425705 /* Pager.modulemap */,
-				2A7C43367E632CE4DC99925279E734A7 /* Pager.xcconfig */,
-				E6D1C801D616619C15B74D98BEBDECB9 /* Pager-dummy.m */,
-				5EF59590DE80851764E4DE504198FDB0 /* Pager-prefix.pch */,
-				9341E53148A94FDED8927C7E930B7991 /* Pager-umbrella.h */,
+				AEBF58F0744FDAB5E6AEDC975038D880 /* PagerTab */,
 			);
-			name = "Support Files";
-			path = "Example/Pager-Example/Pods/Target Support Files/Pager";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		AAC29C4FBD5923F7C4A7B97947FDFAE9 /* Products */ = {
+		8A053ABF49AE99F96242FE366BF5C037 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A29269A92D505C135F8B5B2B1F36DFC3 /* Pager.framework */,
-				E6716AC91CEE888F098C445911C99BBB /* Pods_Pager_Example.framework */,
+				BA2179DE2D2A8BBAEE3D6C4095FBED7E /* Info.plist */,
+				2CF7395C6B8689086B28CBC0C413D8BE /* PagerTab.modulemap */,
+				77F1083967AD3BC1290BEAFF9F5C163B /* PagerTab.xcconfig */,
+				5523631E311148B28608EBB287CF04FA /* PagerTab-dummy.m */,
+				2DD833864A1F855695CA52D3F1E9FFEA /* PagerTab-prefix.pch */,
+				90BFC9CF41EA4E449C382CB78B1BE8DE /* PagerTab-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pager-Example/Pods/Target Support Files/PagerTab";
+			sourceTree = "<group>";
+		};
+		A26FB97A9CFE68A5E7E65A9A295A8173 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D65E8F65DF82F8DAC4D25C51EFF6A4A9 /* PagerTab.framework */,
+				5A3E0F33C1E88760377CFF6394AB6001 /* Pods_Pager_Example.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AEBF58F0744FDAB5E6AEDC975038D880 /* PagerTab */ = {
+			isa = PBXGroup;
+			children = (
+				D2A791E87B0B14F8D4CD123E3309CDDC /* PagerTab.swift */,
+				C685FD2F8A5EFDFE88443E45146BB193 /* PagerTabAppearance.swift */,
+				92063F6CB35B5A232C32EA310F4BD17B /* PagerTabViewController.swift */,
+				E7353DEC4EF9B342922F8D9A9E4B43C8 /* Extension */,
+				D5310E17A31623ADFAFAAEE932050503 /* Pod */,
+				8A053ABF49AE99F96242FE366BF5C037 /* Support Files */,
+				45D034428250619F981B081F091A0AF0 /* utility */,
+			);
+			name = PagerTab;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		AF80EDD1909437F698DD021E9B37C6F4 /* Pods-Pager-Example */ = {
@@ -194,17 +187,19 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		D5310E17A31623ADFAFAAEE932050503 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				10D70DE8AD7EAA86D2974BDCC1B6C0AA /* LICENSE */,
+				0712215B1A96CA97CE721F9A8C69AA7D /* PagerTab.podspec */,
+				14CB927F1A87B87ADF5EA02213E81926 /* README.md */,
 			);
-			name = iOS;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		D55B0581040EE7148E63FE72DA3DEDD6 /* Targets Support Files */ = {
@@ -215,15 +210,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		EA000D44B026319D381509D7FC187525 /* Extension */ = {
+		E7353DEC4EF9B342922F8D9A9E4B43C8 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				4F9A56A5796B24C4627A8CF80CC8D95F /* ArrayExtension.swift */,
-				F4B97DAEA3FAB886EA40F07E1B6FDBBC /* CGFloatExtension.swift */,
-				9B2F71DC573A1352E3C662519CECBA0D /* DoubleExtension.swift */,
-				53E88DAECC5099EB87DCD23A7AB0F104 /* IntExtension.swift */,
-				F2FD60A13C116E25021809D78861F8A7 /* UIViewControllerExtension.swift */,
-				AC1C57528DD0BF855FB672F3BB05A9D1 /* UIViewExtension.swift */,
+				1ACB3FDC74015DB493E6B79AB3787D6B /* CGFloatExtension.swift */,
+				6308680A7E14FCAF3EE5531ADE71307F /* DoubleExtension.swift */,
+				B0982A8C492BF8048BC44F145F06EB63 /* IntExtension.swift */,
+				198EAFD918DE8B407CD5B3718234A107 /* UIViewControllerExtension.swift */,
+				7EC627730E5BC22EA503E53A64B7B1F8 /* UIViewExtension.swift */,
 			);
 			name = Extension;
 			path = Sources/Extension;
@@ -232,58 +226,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		37DCA10833D10E8D46A153B4FCA72467 /* Headers */ = {
+		B64C9C0E8242E850261B51751E05F24C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				589EB5D1B956D0F56392C1EE45565AAC /* Pods-Pager-Example-umbrella.h in Headers */,
+				C0BDAE458679ABC8034761AFFAE18612 /* Pods-Pager-Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DB3813101F76F475B54A56F0FF6FB92 /* Headers */ = {
+		E218C8FAE6EA4EAB832F129A0CCF2271 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A1C0372F71706F464B8EBE30E2A0D6 /* Pager-umbrella.h in Headers */,
+				FFA3E60E07EE1CB87E9CB560CFB43510 /* PagerTab-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7ADCC17EE0E28C1E574020DABD00ABCB /* Pager */ = {
+		2D4BF88BA0B72861E682FC35494005D4 /* Pods-Pager-Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 197E7E586CEEB46295ECEC676F3C6391 /* Build configuration list for PBXNativeTarget "Pager" */;
+			buildConfigurationList = 59D7A9D6378E0DA2139C15AD40F8C809 /* Build configuration list for PBXNativeTarget "Pods-Pager-Example" */;
 			buildPhases = (
-				428B79D32A89EDC84B4433F490ACDBA2 /* Sources */,
-				AC6EB10389D19E4433E12FC0AD60678F /* Frameworks */,
-				4DB3813101F76F475B54A56F0FF6FB92 /* Headers */,
+				B64C9C0E8242E850261B51751E05F24C /* Headers */,
+				5460E58732CDDE26CB2021C77D858D05 /* Sources */,
+				A210B57DD4F777F4107FDF2972CEC0AA /* Frameworks */,
+				E27DA3BC409A4D4D4E4C41CBAF6D8673 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = Pager;
-			productName = Pager;
-			productReference = A29269A92D505C135F8B5B2B1F36DFC3 /* Pager.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E2071C6A98036B953BD951168EFE048A /* Pods-Pager-Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A892727FDC7E02B7E4C9F3F624D44CF1 /* Build configuration list for PBXNativeTarget "Pods-Pager-Example" */;
-			buildPhases = (
-				F3289D1DDA7E3C72C4F2A18D64A22303 /* Sources */,
-				AB11EDB3A737E1C55E4BD09ECB2D7E14 /* Frameworks */,
-				37DCA10833D10E8D46A153B4FCA72467 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DDF5C815DA69BAA3E3048B10B3F89631 /* PBXTargetDependency */,
+				384E80B261622853E0515A439533C909 /* PBXTargetDependency */,
 			);
 			name = "Pods-Pager-Example";
 			productName = "Pods-Pager-Example";
-			productReference = E6716AC91CEE888F098C445911C99BBB /* Pods_Pager_Example.framework */;
+			productReference = 5A3E0F33C1E88760377CFF6394AB6001 /* Pods_Pager_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		439A3645FBE8F6F9CD3DA3C5BF4E0A46 /* PagerTab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF13A0F0D5DBC4EFBC7B34A3BC49AEEA /* Build configuration list for PBXNativeTarget "PagerTab" */;
+			buildPhases = (
+				E218C8FAE6EA4EAB832F129A0CCF2271 /* Headers */,
+				87C89261B6C92DFC4EE74BB7DC4BB1EA /* Sources */,
+				ED4AC60140F5A2FE00C8529B3C8944D2 /* Frameworks */,
+				22B6284342E07B5DF7CEEB78631A8FDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagerTab;
+			productName = PagerTab;
+			productReference = D65E8F65DF82F8DAC4D25C51EFF6A4A9 /* PagerTab.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -294,11 +290,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				TargetAttributes = {
-					7ADCC17EE0E28C1E574020DABD00ABCB = {
-						LastSwiftMigration = 1000;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -308,58 +299,108 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = AAC29C4FBD5923F7C4A7B97947FDFAE9 /* Products */;
+			productRefGroup = A26FB97A9CFE68A5E7E65A9A295A8173 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7ADCC17EE0E28C1E574020DABD00ABCB /* Pager */,
-				E2071C6A98036B953BD951168EFE048A /* Pods-Pager-Example */,
+				439A3645FBE8F6F9CD3DA3C5BF4E0A46 /* PagerTab */,
+				2D4BF88BA0B72861E682FC35494005D4 /* Pods-Pager-Example */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		428B79D32A89EDC84B4433F490ACDBA2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		22B6284342E07B5DF7CEEB78631A8FDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F84FF1C8D216B0C74C9D305A0C785D8 /* ArrayExtension.swift in Sources */,
-				8337158FB91AD29DF6F57703743A13E7 /* CGFloatExtension.swift in Sources */,
-				95181E86207F41580097B05F /* Log.swift in Sources */,
-				0FD451F22E3BBCB34F34136DF3D2E2D3 /* DoubleExtension.swift in Sources */,
-				485D5CF309B5EAC341B61BFE7CB04A65 /* Event.swift in Sources */,
-				4B9CA138227413F431E7E88A2B81111B /* IntExtension.swift in Sources */,
-				3D0ADACACF7E5E63C81FED5B39C53FD6 /* Pager-dummy.m in Sources */,
-				ADBEE9929BAB5F151EF89FCFE259A56F /* Pager.swift in Sources */,
-				66B47EE4F3FE4C965A672F7D29831198 /* PagerAppearance.swift in Sources */,
-				4D100DE70966BAFCC926F9CB6B12337E /* PagerViewController.swift in Sources */,
-				76A3FCB2ABF006942157B4DAB729CA79 /* UIViewControllerExtension.swift in Sources */,
-				0FD7DFEF1875BA1891C2BF2AD54A2B72 /* UIViewExtension.swift in Sources */,
-				C8F4067B2AE5D0105244FA152B7E8873 /* WeakRef.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3289D1DDA7E3C72C4F2A18D64A22303 /* Sources */ = {
+		E27DA3BC409A4D4D4E4C41CBAF6D8673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5460E58732CDDE26CB2021C77D858D05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B04CA74FE4398961FFADBBF5570B08B /* Pods-Pager-Example-dummy.m in Sources */,
+				5AB62A657A5362D6AC0135646BA2B60B /* Pods-Pager-Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87C89261B6C92DFC4EE74BB7DC4BB1EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614A2B25491EA39CD170AC418FF09670 /* CGFloatExtension.swift in Sources */,
+				48DEB61D50EDA81F2466EA50576BA68A /* DoubleExtension.swift in Sources */,
+				2B24344409B1185FA7970D8F9F3AE55A /* Event.swift in Sources */,
+				C01FB0B9234709CC1065EBFB6E5FA2C6 /* IntExtension.swift in Sources */,
+				F677766BCAF123122DBD088952786359 /* PagerTab-dummy.m in Sources */,
+				3B390C795856E8F663D8CCABB04E325D /* PagerTab.swift in Sources */,
+				E0E8427061C530BE492EE975DB3B3AE4 /* PagerTabAppearance.swift in Sources */,
+				9C465B02174B47F5217324646B6AB40C /* PagerTabViewController.swift in Sources */,
+				0C53489FEE9EFDD97381242689482F4A /* UIViewControllerExtension.swift in Sources */,
+				759BCF4CB606A21E87F31BDDFBF386B8 /* UIViewExtension.swift in Sources */,
+				FE83DEA0EB7C558AD0BB3180F8859EEA /* WeakRef.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DDF5C815DA69BAA3E3048B10B3F89631 /* PBXTargetDependency */ = {
+		384E80B261622853E0515A439533C909 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Pager;
-			target = 7ADCC17EE0E28C1E574020DABD00ABCB /* Pager */;
-			targetProxy = 8BB8B24E978F3E05F8E95BC09ACCA15E /* PBXContainerItemProxy */;
+			name = PagerTab;
+			target = 439A3645FBE8F6F9CD3DA3C5BF4E0A46 /* PagerTab */;
+			targetProxy = 8846635B8F25B9B79BC54952E3D9E5FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+		364C34F30BADED1B746CB99525B8704A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36BFDBB1B1DFD70938FE890A652768C8 /* Pods-Pager-Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pager-Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pager-Example/Pods-Pager-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		60DAF49CA7A9F362148D49C3C3123B2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -413,7 +454,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -422,7 +464,41 @@
 			};
 			name = Debug;
 		};
-		362AD19A3C51BF3A604440FC0DEEA24E /* Release */ = {
+		7434D28E88980628667476599CA3760F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77F1083967AD3BC1290BEAFF9F5C163B /* PagerTab.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PagerTab/PagerTab-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PagerTab/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PagerTab/PagerTab.modulemap";
+				PRODUCT_MODULE_NAME = PagerTab;
+				PRODUCT_NAME = PagerTab;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9173C00604DE7EECB5CD8E30AAC7284D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DDA3C05E4DC618F819F20923973B179A /* Pods-Pager-Example.release.xcconfig */;
 			buildSettings = {
@@ -449,7 +525,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -457,107 +534,7 @@
 			};
 			name = Release;
 		};
-		4518FC2C43BC308BA07CF9A96836A02E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A7C43367E632CE4DC99925279E734A7 /* Pager.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Pager/Pager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pager/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pager/Pager.modulemap";
-				PRODUCT_MODULE_NAME = Pager;
-				PRODUCT_NAME = Pager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C5E91130162675AA4AC2E5F2BA911A3E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36BFDBB1B1DFD70938FE890A652768C8 /* Pods-Pager-Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Pager-Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Pager-Example/Pods-Pager-Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FBE7C03F06FA40D4C75077B4B4C60F9F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A7C43367E632CE4DC99925279E734A7 /* Pager.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Pager/Pager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pager/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pager/Pager.modulemap";
-				PRODUCT_MODULE_NAME = Pager;
-				PRODUCT_NAME = Pager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+		C4EAA84F44D044E108500A81C635F21E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -609,38 +586,71 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
+		FB2FA0CCFFB67C1158A74E560FDDFFF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77F1083967AD3BC1290BEAFF9F5C163B /* PagerTab.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PagerTab/PagerTab-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PagerTab/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PagerTab/PagerTab.modulemap";
+				PRODUCT_MODULE_NAME = PagerTab;
+				PRODUCT_NAME = PagerTab;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		197E7E586CEEB46295ECEC676F3C6391 /* Build configuration list for PBXNativeTarget "Pager" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FBE7C03F06FA40D4C75077B4B4C60F9F /* Debug */,
-				4518FC2C43BC308BA07CF9A96836A02E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
-				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+				60DAF49CA7A9F362148D49C3C3123B2A /* Debug */,
+				C4EAA84F44D044E108500A81C635F21E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A892727FDC7E02B7E4C9F3F624D44CF1 /* Build configuration list for PBXNativeTarget "Pods-Pager-Example" */ = {
+		59D7A9D6378E0DA2139C15AD40F8C809 /* Build configuration list for PBXNativeTarget "Pods-Pager-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C5E91130162675AA4AC2E5F2BA911A3E /* Debug */,
-				362AD19A3C51BF3A604440FC0DEEA24E /* Release */,
+				364C34F30BADED1B746CB99525B8704A /* Debug */,
+				9173C00604DE7EECB5CD8E30AAC7284D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF13A0F0D5DBC4EFBC7B34A3BC49AEEA /* Build configuration list for PBXNativeTarget "PagerTab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB2FA0CCFFB67C1158A74E560FDDFFF1 /* Debug */,
+				7434D28E88980628667476599CA3760F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

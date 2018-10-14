@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "Pager"
+  s.name         = "PagerTab"
   s.version      = "0.2"
 
   s.summary      = "Elegant Pager View in Swift"

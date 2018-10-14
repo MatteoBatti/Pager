@@ -1,0 +1,6 @@
+framework module PagerTab {
+  umbrella header "PagerTab-umbrella.h"
+
+  export *
+  module * { export * }
+}

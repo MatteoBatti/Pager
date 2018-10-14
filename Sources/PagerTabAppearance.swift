@@ -1,13 +1,13 @@
 //
 //  PagerApparence.swift
-//  Pager
+//  PagerTab
 //
 //  Created by Matteo Battistini on 16/02/2018.
 //
 
 import UIKit
 
-public enum PagerType {
+public enum PagerTabType {
     case fixedWidth(CGFloat)
     case fixedNumber(Int)
     case dynamic
@@ -15,16 +15,16 @@ public enum PagerType {
 
 
 
-public struct PagerAppearance {
+public struct PagerTabAppearance {
 
-    let type: PagerType
+    let type: PagerTabType
     var selected: Int?
     let height: CGFloat
     var color: UIColor?
     var titleColors: [(UIColor, UIControl.State)]?
     var font: UIFont?
     
-    public init(type: PagerType,
+    public init(type: PagerTabType,
                 selected: Int = 0,
                 height: CGFloat = 50.0,
                 color: UIColor? = .clear,

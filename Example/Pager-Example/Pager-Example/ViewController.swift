@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Pager
+import PagerTab
 
 class ViewController: UIViewController {
 
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         
         //let appearence = PagerAppearance(type: PagerType.fixedWidth(70))
         //let appearence = PagerAppearance(type: PagerType.dynamic, titleColors: [(.blue, .selected), (.blue, .highlighted), (.lightGray, .normal)] )
-        let appearence = PagerAppearance(type: PagerType.fixedNumber(2), color: .yellow, titleColors: [(.blue, .selected), (.blue, .highlighted), (.lightGray, .normal)] )
+        let appearence = PagerTabAppearance(type: PagerTabType.fixedNumber(2), color: .yellow, titleColors: [(.blue, .selected), (.blue, .highlighted), (.lightGray, .normal)] )
         
         
         let PoutingVC: PageViewController = {  let vc = PageViewController(text: "😡")
@@ -38,12 +38,12 @@ class ViewController: UIViewController {
                                                     return vc
                                                     }()
         
-        let viewControllers: [PagerPage] = [( PoutingVC , "Pouting"),
+        let viewControllers: [PagerTabPage] = [( PoutingVC , "Pouting"),
                                             ( BombVC , "Bomb"),
                                             ( NerdVC , "Nerd"),
                                             ( SkullVC , "Skull")  ]
         
-        let pager = Pager( viewControllers , appearence:  appearence )
+        let pager = PagerTab( viewControllers , appearence:  appearence )
         
         
         self.add(childController: pager, toView: self.view)

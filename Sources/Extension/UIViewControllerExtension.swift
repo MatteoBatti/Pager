@@ -1,6 +1,6 @@
 //
 //  UIViewControllerExtension.swift
-//  Pager
+//  PagerTab
 //
 //  Created by Matteo Battistini on 14/02/2018.
 //

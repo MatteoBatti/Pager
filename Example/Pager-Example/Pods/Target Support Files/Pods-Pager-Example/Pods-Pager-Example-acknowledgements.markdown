@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## Pager
+## PagerTab
 
 The MIT License (MIT)
 

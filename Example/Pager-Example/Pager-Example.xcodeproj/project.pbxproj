@@ -169,11 +169,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pager-Example/Pods-Pager-Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Pager/Pager.framework",
+				"${BUILT_PRODUCTS_DIR}/PagerTab/PagerTab.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PagerTab.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

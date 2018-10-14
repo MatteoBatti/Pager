@@ -1,6 +1,6 @@
 //
 //  DoubleExtension.swift
-//  Pager
+//  PagerTab
 //
 //  Created by Matteo Battistini on 21/02/2018.
 //

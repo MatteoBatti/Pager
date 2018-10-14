@@ -1,13 +1,13 @@
 //
 //  PagerViewController.swift
-//  Pager
+//  PagerTab
 //
 //  Created by Matteo Battistini on 15/02/2018.
 //
 
 import UIKit
 
-class PagerViewController: UIPageViewController {
+class PagerTabViewController: UIPageViewController {
     
     var pages: [UIViewController] = []
     var currentIndex: Event<Int> = Event(0)
@@ -47,16 +47,15 @@ class PagerViewController: UIPageViewController {
 }
 
 
-extension PagerViewController: UIPageViewControllerDelegate {
+extension PagerTabViewController: UIPageViewControllerDelegate {
     
     func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
-        print("will start transition to \(pages.index(of: pendingViewControllers.first!)!)")
+        
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         if let currentViewController = self.currentViewController {
             currentIndex.value = self.pages.index(of: currentViewController) ?? 0
-            print("did appear \(currentIndex.value)")
         }
     }
 
@@ -64,7 +63,7 @@ extension PagerViewController: UIPageViewControllerDelegate {
 
 }
 
-extension PagerViewController: UIPageViewControllerDataSource {
+extension PagerTabViewController: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         

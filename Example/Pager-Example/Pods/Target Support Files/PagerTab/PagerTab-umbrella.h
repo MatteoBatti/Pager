@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double PagerVersionNumber;
-FOUNDATION_EXPORT const unsigned char PagerVersionString[];
+FOUNDATION_EXPORT double PagerTabVersionNumber;
+FOUNDATION_EXPORT const unsigned char PagerTabVersionString[];
 

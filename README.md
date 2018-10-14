@@ -1,6 +1,6 @@
 # Pager
 
-> Easy to use wrapper of UIPagerViewController
+> UIPagerViewController wrapper
 
 ## Requirements
 
@@ -10,7 +10,7 @@
 ## Installation
 
 #### CocoaPods
-You can use [CocoaPods](http://cocoapods.org/) to install `Pager` by adding it to your `Podfile`:
+You can use [CocoaPods](http://cocoapods.org/) to install `PagerTab` by adding it to your `Podfile`:
 
 ```ruby
 
@@ -18,30 +18,30 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'YourTarget' do
-    pod "Pager"
+    pod "PagerTab"
 end
 
 ```
 
-To get the full benefits import `Pager`
+To get the full benefits import `PagerTab`
 
 ``` swift
-import Pager
+import PagerTab
 ```
 
 ## Usage example
 
-set up your `PagerAppearance`
+set up your `PagerTabAppearance`
 
 ```swift
-let appearence = PagerAppearance(   type: PagerType.fixedNumber(2),
+let appearence = PagerTabAppearance(   type: PagerTabType.fixedNumber(2),
                                     titleColors: [(.blue, .selected), (.blue, .highlighted), (.lightGray, .normal)] )
 ```
 
-for the different customization options  take a look at  `PagerAppearance` init
+for the different customization options take a look at  `PagerTabAppearance` init
 
 ```swift
-public init(type: PagerType,
+public init(type: PagerTabType,
             selected: Int = 0,
             height: CGFloat = 50.0,
             color: UIColor? = .clear,
@@ -72,19 +72,19 @@ let SkullVC: BeautifulViewController   = {  let vc = BeautifulViewController(tex
                                             }()
 ```
 
-set up the  `PagerPage` array
+set up the  `PagerTabPage` array
 
 ```swift
-let viewControllers: [PagerPage] = [( PoutingVC , "Pouting"),
+let viewControllers: [PagerTabPage] = [( PoutingVC , "Pouting"),
                                     ( BombVC , "Bomb"),
                                     ( NerdVC , "Nerd"),
                                     ( SkullVC , "Skull") ]
 ```
 
-init your `Pager`
+init your `PagerTab`
 
 ```swift
-let pager = Pager( viewControllers , appearence:  appearence )
+let pager = PagerTab( viewControllers , appearence:  appearence )
 ```
 add it to your view
 

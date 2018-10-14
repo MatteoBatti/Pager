@@ -1,6 +1,6 @@
 //
 //  Event.swift
-//  Pager
+//  PagerTab
 //
 //  Created by Matteo Battistini on 08/03/2018.
 //

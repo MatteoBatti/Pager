@@ -40,7 +40,7 @@ SOFTWARE.
 			<key>License</key>
 			<string>MIT</string>
 			<key>Title</key>
-			<string>Pager</string>
+			<string>PagerTab</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

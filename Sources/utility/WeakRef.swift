@@ -1,6 +1,6 @@
 //
 //  WeakRef.swift
-//  Pager
+//  PagerTab
 //
 //  Created by Matteo Battistini on 27/02/2018.
 //

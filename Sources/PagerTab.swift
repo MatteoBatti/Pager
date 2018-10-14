@@ -6,13 +6,13 @@
 
 import UIKit
 
-public typealias PagerPage = (UIViewController, String)
-public typealias PagerCallback = (Int) -> Void
+public typealias PagerTabPage = (UIViewController, String)
+public typealias PagerTabCallback = (Int) -> Void
 
-public class Pager: UIViewController  {
+public class PagerTab: UIViewController  {
     
-    private var viewControllers: [PagerPage]?
-    private var pagerVC: PagerViewController?
+    private var viewControllers: [PagerTabPage]?
+    private var pagerVC: PagerTabViewController?
     private lazy var stackView: UIStackView =  {
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -44,20 +44,20 @@ public class Pager: UIViewController  {
         return scrollView
     }()
     private var wButtons : [WeakRef<UIButton>]?
-    var appearence: PagerAppearance? {
+    var appearence: PagerTabAppearance? {
         didSet {
             // reload layout
         }
     }
-    public var willAppear: PagerCallback? = nil
-    public var didAppear: PagerCallback? = nil
+    public var willAppear: PagerTabCallback? = nil
+    public var didAppear: PagerTabCallback? = nil
     
     
-    public init(_ viewControllers: [PagerPage]?, appearence: PagerAppearance? = nil) {
+    public init(_ viewControllers: [PagerTabPage]?, appearence: PagerTabAppearance? = nil) {
         self.viewControllers = viewControllers
         self.appearence = appearence
         let pages = self.viewControllers?.map({ $0.0 })
-        self.pagerVC = PagerViewController(pages: pages ?? [],
+        self.pagerVC = PagerTabViewController(pages: pages ?? [],
                                            transitionStyle: UIPageViewController.TransitionStyle.scroll,
                                            navigationOrientation: UIPageViewController.NavigationOrientation.horizontal,
                                            options: nil)
@@ -164,7 +164,7 @@ public class Pager: UIViewController  {
             button.setTitleColor(color, for: state)
         })
         button.titleLabel?.font = self.appearence?.font
-        button.addTarget(self, action: #selector(Pager.selectorTapped(_:)), for: UIControl.Event.touchUpInside)
+        button.addTarget(self, action: #selector(PagerTab.selectorTapped(_:)), for: UIControl.Event.touchUpInside)
         return button
     }
     
