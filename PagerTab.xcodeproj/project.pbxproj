@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		52D6D9871BEFF229002C0205 /* PagerTab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* PagerTab.framework */; };
 		8933C7901EB5B82D000D00A4 /* PagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* PagerTests.swift */; };
+		9530697A21BF9FF400063304 /* ButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9530697921BF9FF400063304 /* ButtonFactory.swift */; };
 		95D2DB732168BAE900BE7C8C /* PagerTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D2DB652168BAE900BE7C8C /* PagerTab.swift */; };
 		95D2DB752168BAE900BE7C8C /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D2DB682168BAE900BE7C8C /* IntExtension.swift */; };
 		95D2DB762168BAE900BE7C8C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D2DB692168BAE900BE7C8C /* UIViewControllerExtension.swift */; };
@@ -35,6 +36,7 @@
 		52D6D97C1BEFF229002C0205 /* PagerTab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PagerTab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* PagerTab-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PagerTab-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8933C7891EB5B82A000D00A4 /* PagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerTests.swift; sourceTree = "<group>"; };
+		9530697921BF9FF400063304 /* ButtonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonFactory.swift; sourceTree = "<group>"; };
 		95D2DB652168BAE900BE7C8C /* PagerTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerTab.swift; sourceTree = "<group>"; };
 		95D2DB682168BAE900BE7C8C /* IntExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		95D2DB692168BAE900BE7C8C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				95D2DB662168BAE900BE7C8C /* Extension */,
 				95D2DB6D2168BAE900BE7C8C /* PagerTabAppearance.swift */,
 				95D2DB6E2168BAE900BE7C8C /* PagerTabViewController.swift */,
+				9530697921BF9FF400063304 /* ButtonFactory.swift */,
 				95D2DB6F2168BAE900BE7C8C /* utility */,
 			);
 			path = Sources;
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95D2DB782168BAE900BE7C8C /* UIViewExtension.swift in Sources */,
+				9530697A21BF9FF400063304 /* ButtonFactory.swift in Sources */,
 				95D2DB7D2168BAE900BE7C8C /* Event.swift in Sources */,
 				95D2DB762168BAE900BE7C8C /* UIViewControllerExtension.swift in Sources */,
 				95D2DB772168BAE900BE7C8C /* CGFloatExtension.swift in Sources */,

@@ -118,7 +118,7 @@ public class PagerTab: UIViewController  {
         stackView.heightAnchor.constraint(equalTo: scrollView.heightAnchor).isActive = true
         
         // create buttons
-        let buttons = viewControllers?.enumerated().map { ButtonFactory.button($1.1, tag: $0, appearence: self.appearence, target: self, action: #selector(PagerTab.selectorTapped(_:))) }
+        let buttons = viewControllers?.enumerated().map { button($1.1, tag: $0) }
         
         // add buttons
         buttons?.forEach(stackView.addArrangedSubview)
