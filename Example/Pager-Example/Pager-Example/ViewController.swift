@@ -15,30 +15,34 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.titleView = { let label = UILabel()
+            label.textColor = FlatColor.darkBlue
+            label.text = "PagerTab"
+            return label
+        }()
         
         //let appearence = PagerAppearance(type: PagerType.fixedWidth(70))
         //let appearence = PagerAppearance(type: PagerType.dynamic, titleColors: [(.blue, .selected), (.blue, .highlighted), (.lightGray, .normal)] )
-        let appearence = PagerTabAppearance(type: PagerTabType.fixedNumber(2), color: .yellow, titleColors: [(.blue, .selected), (.blue, .highlighted), (.lightGray, .normal)] )
+        let appearence = PagerTabAppearance(type: PagerTabType.fixedNumber(2), color: FlatColor.yellow, titleColors: [(FlatColor.blue, .selected), (FlatColor.blue, .highlighted), (FlatColor.lightYellow, .normal)] )
+        
+        let sb = UIStoryboard.init(name: "Main", bundle: nil)
+        let shoppingListVC = sb.instantiateViewController(withIdentifier: "ShoppingListId")
         
         
-        let PoutingVC: PageViewController = {  let vc = PageViewController(text: "😡")
-                                                    vc.view.backgroundColor = UIColor.gray
-                                                    return vc
-                                                    }()
         let BombVC: PageViewController    =  {  let vc = PageViewController(text: "💣")
-                                                    vc.view.backgroundColor = UIColor.lightGray
+                                                    vc.view.backgroundColor = FlatColor.lightGray
                                                     return vc
                                                     }()
         let NerdVC: PageViewController    = {  let vc = PageViewController(text: "🤓")
-                                                    vc.view.backgroundColor = UIColor.white
+                                                    vc.view.backgroundColor = FlatColor.lightGray
                                                     return vc
                                                     }()
         let SkullVC: PageViewController   = {  let vc = PageViewController(text: "☠️")
-                                                    vc.view.backgroundColor = UIColor.black
+                                                    vc.view.backgroundColor = FlatColor.lightGray
                                                     return vc
                                                     }()
         
-        let viewControllers: [PagerTabPage] = [( PoutingVC , "Pouting"),
+        let viewControllers: [PagerTabPage] = [( shoppingListVC , "Shopping List"),
                                             ( BombVC , "Bomb"),
                                             ( NerdVC , "Nerd"),
                                             ( SkullVC , "Skull")  ]
