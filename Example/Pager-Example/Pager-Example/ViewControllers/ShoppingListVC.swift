@@ -10,7 +10,46 @@ import UIKit
 
 class ShoppingListVC: UITableViewController {
     
-    let ShoppingList = ["Tomatoes", "Mozzarella", "Pasta"]
+    let shoppingList = ["Apples",
+                        "Apricots",
+                        "Bananas",
+                        "Blackberries",
+                        "Blueberries",
+                        "Cantaloupe",
+                        "Cherries",
+                        "Clementines",
+                        "Coconut",
+                        "Cucumber",
+                        "Currants",
+                        "Durian",
+                        "Figs",
+                        "Grapefruit",
+                        "Grapes",
+                        "Guava",
+                        "Honeydew",
+                        "Jackfruit",
+                        "Kiwis",
+                        "Kumquats",
+                        "Lemons",
+                        "Limes",
+                        "Lychees",
+                        "Mangoes",
+                        "Mangosteen",
+                        "Nectarines",
+                        "Collard",
+                        "Corn",
+                        "Cucumber",
+                        "Eggplant",
+                        "Fennel",
+                        "Green Onions",
+                        "Jalapeno Peppers",
+                        "Kohlrabi",
+                        "Leek",
+                        "Mushrooms",
+                        "Olives",
+                        "Onions",
+                        "Okra",
+                        "Parsnip"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,13 +63,13 @@ class ShoppingListVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return shoppingList.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ShoppingListCellId", for: indexPath)
         cell.textLabel?.textColor = FlatColor.blue
-        cell.textLabel?.text = ShoppingList[indexPath.row]
+        cell.textLabel?.text = shoppingList[indexPath.row]
         return cell
     }
 
