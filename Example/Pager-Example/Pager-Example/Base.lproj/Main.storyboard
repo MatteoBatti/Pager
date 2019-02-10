@@ -84,5 +84,101 @@
             </objects>
             <point key="canvasLocation" x="1252" y="105"/>
         </scene>
+        <!--TextVC-->
+        <scene sceneID="QeR-AB-Ddk">
+            <objects>
+                <viewController storyboardIdentifier="TextVCid" id="RnT-e3-Acp" customClass="TextVC" customModule="Pager_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nYW-8a-Usg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NDR-m3-aU2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NDR-m3-aU2" firstAttribute="trailing" secondItem="yQA-bl-S8X" secondAttribute="trailing" id="GwU-Bi-EA9"/>
+                            <constraint firstItem="NDR-m3-aU2" firstAttribute="leading" secondItem="yQA-bl-S8X" secondAttribute="leading" id="Urn-pn-3fL"/>
+                            <constraint firstItem="NDR-m3-aU2" firstAttribute="bottom" secondItem="yQA-bl-S8X" secondAttribute="bottom" id="ckq-TM-Ot1"/>
+                            <constraint firstItem="NDR-m3-aU2" firstAttribute="top" secondItem="yQA-bl-S8X" secondAttribute="top" id="g0H-cD-SdM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yQA-bl-S8X"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWq-lf-lHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2060" y="104.7976011994003"/>
+        </scene>
+        <!--CollectionVC-->
+        <scene sceneID="Nu9-n0-bH6">
+            <objects>
+                <collectionViewController storyboardIdentifier="CollectionVCId" id="3si-Ea-I8r" customClass="CollectionVC" customModule="Pager_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="2fn-X3-iv3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rwR-Y2-FSm">
+                            <size key="itemSize" width="150" height="150"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="8" minY="8" maxX="8" maxY="8"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellId" id="biv-4Z-tbE">
+                                <rect key="frame" x="8" y="8" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" red="0.94845300909999997" green="0.79915159940000002" blue="0.3017944098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="3si-Ea-I8r" id="577-Mr-bnr"/>
+                            <outlet property="delegate" destination="3si-Ea-I8r" id="eJt-0S-0Rb"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SP5-Pu-Ahe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2824.8000000000002" y="104.7976011994003"/>
+        </scene>
+        <!--ImageVC-->
+        <scene sceneID="PiT-9s-qra">
+            <objects>
+                <viewController storyboardIdentifier="ImageVCId" id="yp9-xZ-zVQ" customClass="ImageVC" customModule="Pager_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YSf-xg-U3m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="150.png" translatesAutoresizingMaskIntoConstraints="NO" id="CSD-mo-w3h">
+                                <rect key="frame" x="112.5" y="258.5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="9dy-SF-LHk"/>
+                                    <constraint firstAttribute="height" constant="150" id="i5o-Mm-7fl"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CSD-mo-w3h" firstAttribute="centerX" secondItem="YSf-xg-U3m" secondAttribute="centerX" id="9Na-2f-AlX"/>
+                            <constraint firstItem="CSD-mo-w3h" firstAttribute="centerY" secondItem="YSf-xg-U3m" secondAttribute="centerY" id="ars-am-9pX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tgy-3w-2PN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7k-mg-Pij" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3597" y="106"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="150.png" width="150" height="150"/>
+    </resources>
 </document>

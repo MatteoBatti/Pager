@@ -27,25 +27,14 @@ class ViewController: UIViewController {
         
         let sb = UIStoryboard.init(name: "Main", bundle: nil)
         let shoppingListVC = sb.instantiateViewController(withIdentifier: "ShoppingListId")
-        
-        
-        let BombVC: PageViewController    =  {  let vc = PageViewController(text: "💣")
-                                                    vc.view.backgroundColor = FlatColor.lightGray
-                                                    return vc
-                                                    }()
-        let NerdVC: PageViewController    = {  let vc = PageViewController(text: "🤓")
-                                                    vc.view.backgroundColor = FlatColor.lightGray
-                                                    return vc
-                                                    }()
-        let SkullVC: PageViewController   = {  let vc = PageViewController(text: "☠️")
-                                                    vc.view.backgroundColor = FlatColor.lightGray
-                                                    return vc
-                                                    }()
+        let textVC = sb.instantiateViewController(withIdentifier: "TextVCid")
+        let collectionVC = sb.instantiateViewController(withIdentifier: "CollectionVCId")
+        let imageVC = sb.instantiateViewController(withIdentifier: "ImageVCId")
         
         let viewControllers: [PagerTabPage] = [( shoppingListVC , "Shopping List"),
-                                            ( BombVC , "Bomb"),
-                                            ( NerdVC , "Nerd"),
-                                            ( SkullVC , "Skull")  ]
+                                            ( textVC , "Text"),
+                                            ( collectionVC , "Collection"),
+                                            ( imageVC , "Image")  ]
         
         let pager = PagerTab( viewControllers , appearence:  appearence )
         

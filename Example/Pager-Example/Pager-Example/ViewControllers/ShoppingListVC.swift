@@ -18,7 +18,7 @@ class ShoppingListVC: UITableViewController {
         self.tableView.backgroundColor = FlatColor.lightGray
         self.tableView.reloadData()
     }
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
