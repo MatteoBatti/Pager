@@ -38,6 +38,10 @@ class ViewController: UIViewController {
         
         let pager = PagerTab( viewControllers , appearence:  appearence )
         
+        pager.didAppear = { pageIdx, page in
+            print("did appear page at index => \(pageIdx), with name => \(page.1), with viewController => \(String(describing: type(of: page.0)))")
+        }
+        
         
         self.add(childController: pager, toView: self.view)
     }

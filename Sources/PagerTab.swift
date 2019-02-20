@@ -7,7 +7,7 @@
 import UIKit
 
 public typealias PagerTabPage = (UIViewController, String)
-public typealias PagerTabCallback = (Int) -> Void
+public typealias PagerTabCallback = (Int, PagerTabPage) -> Void
 
 public class PagerTab: UIViewController  {
     
@@ -46,10 +46,12 @@ public class PagerTab: UIViewController  {
     private var wButtons : [WeakRef<UIButton>]?
     var appearence: PagerTabAppearance? {
         didSet {
-            // reload layout
+            //TODO: reload layout
         }
     }
-    public var willAppear: PagerTabCallback? = nil
+    // TODO: implement willappear callback
+    internal var willAppear: PagerTabCallback? = nil
+    
     public var didAppear: PagerTabCallback? = nil
     
     
@@ -147,8 +149,8 @@ public class PagerTab: UIViewController  {
 
         self.pagerVC?.currentIndex.addObserver(self, handler: { (self) in
             self.showButton(self.pagerVC?.currentIndex.value)
-            if let index = self.pagerVC?.currentIndex.value {
-                self.didAppear?(index)
+            if let index = self.pagerVC?.currentIndex.value, let page = self.viewControllers?[index] {
+                self.didAppear?(index, page)
             }
         })
         
