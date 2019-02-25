@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "728691E1C40ED1D3C8F72364963BE72D"
+               BlueprintIdentifier = "4D8677DF2903A450B0888E8BDFD0C28F"
+               BuildableName = "PagerTab.framework"
                BlueprintName = "PagerTab"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "PagerTab.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

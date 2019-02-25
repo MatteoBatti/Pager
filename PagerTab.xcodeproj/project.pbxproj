@@ -10,6 +10,7 @@
 		52D6D9871BEFF229002C0205 /* PagerTab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* PagerTab.framework */; };
 		8933C7901EB5B82D000D00A4 /* PagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* PagerTests.swift */; };
 		9530697A21BF9FF400063304 /* ButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9530697921BF9FF400063304 /* ButtonFactory.swift */; };
+		95B3C7B42223E7A40028A7CF /* PagerTabDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B3C7B32223E7A40028A7CF /* PagerTabDelegate.swift */; };
 		95D2DB732168BAE900BE7C8C /* PagerTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D2DB652168BAE900BE7C8C /* PagerTab.swift */; };
 		95D2DB752168BAE900BE7C8C /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D2DB682168BAE900BE7C8C /* IntExtension.swift */; };
 		95D2DB762168BAE900BE7C8C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D2DB692168BAE900BE7C8C /* UIViewControllerExtension.swift */; };
@@ -37,6 +38,8 @@
 		52D6D9861BEFF229002C0205 /* PagerTab-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PagerTab-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8933C7891EB5B82A000D00A4 /* PagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerTests.swift; sourceTree = "<group>"; };
 		9530697921BF9FF400063304 /* ButtonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonFactory.swift; sourceTree = "<group>"; };
+		95B3C7B32223E7A40028A7CF /* PagerTabDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTabDelegate.swift; sourceTree = "<group>"; };
+		95B3C7B52223F54D0028A7CF /* PagerTab.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = PagerTab.podspec; sourceTree = "<group>"; };
 		95D2DB652168BAE900BE7C8C /* PagerTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerTab.swift; sourceTree = "<group>"; };
 		95D2DB682168BAE900BE7C8C /* IntExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		95D2DB692168BAE900BE7C8C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 		52D6D9721BEFF229002C0205 = {
 			isa = PBXGroup;
 			children = (
+				95B3C7B52223F54D0028A7CF /* PagerTab.podspec */,
 				95D2DB642168BAE900BE7C8C /* Sources */,
 				8933C7831EB5B7EB000D00A4 /* Tests */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
@@ -111,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				95D2DB652168BAE900BE7C8C /* PagerTab.swift */,
+				95B3C7B32223E7A40028A7CF /* PagerTabDelegate.swift */,
 				95D2DB662168BAE900BE7C8C /* Extension */,
 				95D2DB6D2168BAE900BE7C8C /* PagerTabAppearance.swift */,
 				95D2DB6E2168BAE900BE7C8C /* PagerTabViewController.swift */,
@@ -270,6 +275,7 @@
 			files = (
 				95D2DB782168BAE900BE7C8C /* UIViewExtension.swift in Sources */,
 				9530697A21BF9FF400063304 /* ButtonFactory.swift in Sources */,
+				95B3C7B42223E7A40028A7CF /* PagerTabDelegate.swift in Sources */,
 				95D2DB7D2168BAE900BE7C8C /* Event.swift in Sources */,
 				95D2DB762168BAE900BE7C8C /* UIViewControllerExtension.swift in Sources */,
 				95D2DB772168BAE900BE7C8C /* CGFloatExtension.swift in Sources */,

@@ -1,5 +1,5 @@
 PODS:
-  - PagerTab (0.3)
+  - PagerTab (0.4)
 
 DEPENDENCIES:
   - PagerTab (from `../../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  PagerTab: 49f9a64fdf2f7cd22e3bbcde5ec913eeb08d5924
+  PagerTab: 64fdeee5f2ccb5e0def0af4de287a0c156dc4ae2
 
 PODFILE CHECKSUM: 1a9f992844aaba93fb487c2efc8d226ac0cc4b6f
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0

@@ -49,10 +49,8 @@ public class PagerTab: UIViewController  {
             //TODO: reload layout
         }
     }
-    // TODO: implement willappear callback
-    internal var willAppear: PagerTabCallback? = nil
     
-    public var didAppear: PagerTabCallback? = nil
+    weak public var delegate: PagerTabDelegate? = nil
     
     
     public init(_ viewControllers: [PagerTabPage]?, appearence: PagerTabAppearance? = nil) {
@@ -150,7 +148,7 @@ public class PagerTab: UIViewController  {
         self.pagerVC?.currentIndex.addObserver(self, handler: { (self) in
             self.showButton(self.pagerVC?.currentIndex.value)
             if let index = self.pagerVC?.currentIndex.value, let page = self.viewControllers?[index] {
-                self.didAppear?(index, page)
+                self.delegate?.pageDidAppear(index, page: page)
             }
         })
         

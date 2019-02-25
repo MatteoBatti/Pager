@@ -9,17 +9,14 @@
 import UIKit
 import PagerTab
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, PagerTabDelegate {
 
+    deinit {
+        print("-> DEINIT!!")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.titleView = { let label = UILabel()
-            label.textColor = FlatColor.darkBlue
-            label.text = "PagerTab"
-            return label
-        }()
         
         //let appearence = PagerAppearance(type: PagerType.fixedWidth(70))
         //let appearence = PagerAppearance(type: PagerType.dynamic, titleColors: [(.blue, .selected), (.blue, .highlighted), (.lightGray, .normal)] )
@@ -37,17 +34,23 @@ class ViewController: UIViewController {
                                             ( imageVC , "Image")  ]
         
         let pager = PagerTab( viewControllers , appearence:  appearence )
-        
-        pager.didAppear = { pageIdx, page in
-            print("did appear page at index => \(pageIdx), with name => \(page.1), with viewController => \(String(describing: type(of: page.0)))")
-        }
+        pager.delegate = self
         
         
         self.add(childController: pager, toView: self.view)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.topItem?.title = ""
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func pageDidAppear(_ index: Int, page: PagerTabPage) {
+            print("did appear page at index => \(index), with name => \(page.1), with viewController => \(String(describing: type(of: page.0)))")
     }
 
 

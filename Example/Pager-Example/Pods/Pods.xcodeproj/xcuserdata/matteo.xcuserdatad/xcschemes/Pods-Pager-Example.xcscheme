@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D4BF88BA0B72861E682FC35494005D4"
+               BlueprintIdentifier = "A380BE11873F04C56B4B00D5B394AEBF"
                BuildableName = "Pods_Pager_Example.framework"
                BlueprintName = "Pods-Pager-Example"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D4BF88BA0B72861E682FC35494005D4"
+            BlueprintIdentifier = "A380BE11873F04C56B4B00D5B394AEBF"
             BuildableName = "Pods_Pager_Example.framework"
             BlueprintName = "Pods-Pager-Example"
             ReferencedContainer = "container:Pods.xcodeproj">
