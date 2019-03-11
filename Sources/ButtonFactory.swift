@@ -10,8 +10,9 @@ import UIKit
 class ButtonFactory {
     
     
-    class func button(_ title: String, tag: Int? = 0, appearence: PagerTabAppearance?, target: Any?, action: Selector) -> UIButton {
+    class func button(_ title: String, tag: Int? = 0, appearence: PagerTabAppearance?, target: Any?, action: Selector, accessibilityIdentifier: String? = nil) -> UIButton {
         let button = UIButton()
+        button.accessibilityIdentifier = accessibilityIdentifier
         button.tag = tag ?? 0
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle(title, for: UIControl.State.normal)

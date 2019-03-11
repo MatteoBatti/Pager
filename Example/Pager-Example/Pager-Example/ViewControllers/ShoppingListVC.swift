@@ -58,6 +58,11 @@ class ShoppingListVC: UITableViewController {
         self.tableView.reloadData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: nil, action: nil)
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

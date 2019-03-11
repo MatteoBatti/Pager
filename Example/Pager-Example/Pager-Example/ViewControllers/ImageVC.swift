@@ -14,5 +14,11 @@ class ImageVC: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = FlatColor.lightGray
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: nil, action: nil)
+    }
 
 }

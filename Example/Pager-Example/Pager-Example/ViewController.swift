@@ -24,9 +24,13 @@ class ViewController: UIViewController, PagerTabDelegate {
         
         let sb = UIStoryboard.init(name: "Main", bundle: nil)
         let shoppingListVC = sb.instantiateViewController(withIdentifier: "ShoppingListId")
+        shoppingListVC.view.accessibilityIdentifier = "ShoppingListId"
         let textVC = sb.instantiateViewController(withIdentifier: "TextVCid")
+        textVC.view.accessibilityIdentifier = "TextVCid"
         let collectionVC = sb.instantiateViewController(withIdentifier: "CollectionVCId")
+        textVC.view.accessibilityIdentifier = "CollectionVCId"
         let imageVC = sb.instantiateViewController(withIdentifier: "ImageVCId")
+        imageVC.view.accessibilityIdentifier = "ImageVCId"
         
         let viewControllers: [PagerTabPage] = [( shoppingListVC , "Shopping List"),
                                             ( textVC , "Text"),

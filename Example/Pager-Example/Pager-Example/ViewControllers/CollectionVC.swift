@@ -17,6 +17,11 @@ class CollectionVC: UICollectionViewController {
         self.view.backgroundColor = FlatColor.lightGray
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .camera, target: nil, action: nil)
+    }
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1

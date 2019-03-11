@@ -6,6 +6,7 @@
 
 import UIKit
 
+// controller, title, accessibiliuty
 public typealias PagerTabPage = (UIViewController, String)
 public typealias PagerTabCallback = (Int, PagerTabPage) -> Void
 
@@ -118,7 +119,10 @@ public class PagerTab: UIViewController  {
         stackView.heightAnchor.constraint(equalTo: scrollView.heightAnchor).isActive = true
         
         // create buttons
-        let buttons = viewControllers?.enumerated().map { ButtonFactory.button($1.1, tag: $0, appearence: self.appearence, target: self, action: #selector(PagerTab.selectorTapped(_:))) }
+        let buttons   = viewControllers?.enumerated().map({ tuple -> UIButton in
+            let (index, viewController) = tuple
+            return ButtonFactory.button(viewController.1, tag: index, appearence: self.appearence, target: self, action: #selector(PagerTab.selectorTapped(_:)), accessibilityIdentifier: viewController.0.view.accessibilityIdentifier)
+        })
         
         // add buttons
         buttons?.forEach(stackView.addArrangedSubview)
